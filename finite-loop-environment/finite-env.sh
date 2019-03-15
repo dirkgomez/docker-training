@@ -1,5 +1,4 @@
 #!/bin/bash
-COUNT_SECONDS=1
 
 while ((COUNT_SECONDS <= "${COUNT_TO-20}"))
 do

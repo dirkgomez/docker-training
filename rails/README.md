@@ -1,4 +1,4 @@
-docker-compose run web rails new . --force --no-deps --database=postgresql
+USER_ID=${UID} GROUP_ID=${GID} docker-compose run web rails new . --force --no-deps --database=postgresql
 docker-compose build
 cp config_database.yml sourcecode/config/database.yml
 docker-compose up
